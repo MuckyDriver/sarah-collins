@@ -60,7 +60,7 @@ main {
     min-height: 100dvh;
     
     background-color: white;
-    background-image: url("backgrounds/piano-man.svg");
+    background-image: url("/public/backgrounds/piano-man.svg");
 }
 
 main > * {
