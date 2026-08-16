@@ -1,0 +1,8 @@
+*.brokentext {
+    position: relative;
+}
+
+*.brokentext > span:hover {
+    display: inline-block;
+    transform: translateY(2px);
+}

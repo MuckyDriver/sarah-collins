@@ -1,0 +1,115 @@
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0em 2em;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 0.25em;
+    padding: 0.2em;
+
+    width: fit-content;
+    background-color: #fafafa;
+    background-position: center;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+nav > ul > li {
+    padding: 0.05em;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #444;
+    text-align: center;
+    display: block;
+    padding: 0.4em 1.5em;
+    white-space: nowrap;
+    border-radius: 6px;
+    transition: background-color 0.05s ease-in-out;
+}
+
+nav > ul > li > a.active {
+    background-color: #444;
+    color: white;
+}
+
+nav > ul > li > :is(a:focus-visible:not(.active), a:hover:not(.active)) {
+    background-color: #00000011;
+}
+
+nav > button { display: none; }
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0em 1em;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+    nav {
+        transform: translateY(-100%);
+
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        background-color: white;
+
+        top: 0px; left: 0px;
+        width: 100dvw;
+        height: 100dvh;
+        z-index: 1000;
+
+        overflow-y: auto;
+    }
+
+    nav.open {
+        transform: translateY(0%);
+        transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    nav > button {
+        cursor: pointer;
+
+        display: flex;
+        gap: 0.5em;
+        justify-content: center;
+        align-items: center;
+        color: #434343;
+        background-color: #00000010;
+        border: none;
+        border-radius: 8px;
+        padding: 1em;
+        margin: 2em; margin-bottom: 1em;
+
+        /* Text */
+        font-family: inherit;
+        font-size: large;
+        font-weight: 500;
+    }
+
+    nav > button > img {
+        width: 28px;
+    }
+
+    nav > ul {
+        padding: 0px;
+        flex-direction: column;
+        background: none;
+        border: none;
+        font-size: larger;
+
+        overflow: clip;
+    }
+}

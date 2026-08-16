@@ -1,0 +1,115 @@
+div.audio-container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 250px;
+}
+
+audio {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: red;
+}
+
+div.audio-player {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 0.5em;
+    padding: 1em;
+    background-color: #eee;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: inherit;
+}
+
+div.audio-player.playing {
+    outline: 4px solid rgba(220, 20, 60, 0);
+    animation: playingEffect 0.25s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running; 
+}
+
+@keyframes playingEffect {
+    0% { outline-width: 2px; outline-color: rgba(220, 20, 60, 0);  }
+    100% { outline-width: 4px; outline-color: rgba(220, 20, 60, 0.2);  }
+}
+
+div.audio-player > :first-child {
+    grid-row: span 2;
+    align-self: center;
+    display: flex;
+}
+
+/* Progress, Play */
+div.audio-player > div.play-progress {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0.5em;
+    align-items: center;
+}
+
+div.audio-player > div.play-progress > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #ccc;
+    border-radius: 4px;
+    width: 27px; height: 27px;
+
+    cursor: pointer;
+}
+
+div.audio-player.playing > div.play-progress > button img:first-child { display: none; }
+div.audio-player.playing > div.play-progress > button img:last-child { display: block; }
+div.audio-player > div.play-progress > button img:last-child { display: none; }
+
+div.audio-player > div.play-progress > :is(button:hover, button:focus-visible) {
+    background-color: #bbb;
+}
+
+div.audio-player > div.play-progress > div.progress-bar {
+    --percent: 0%;
+    width: 100%;
+    height: 10px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #ddd;
+    position: relative;
+}
+
+div.audio-player > div.play-progress > div.progress-bar::after {
+    content: "";
+    height: 100%;
+    width: var(--percent, 0%);
+    position: absolute;
+    top: 0; left: 0;
+    background-color: crimson;
+    z-index: 2;
+}
+
+/* Info */
+div.audio-player > div.info {
+    display: grid;
+    grid-template-columns: auto max-content;
+    gap: 0.5em;
+    align-items: center;
+}
+
+div.audio-player > div.info > :last-child {
+    background-color: rgba(220, 20, 60, 0.1);
+    border-radius: 100px;
+    padding: 0.125em;
+}
+
+div.audio-player > div.info > :last-child > * {
+    font-size: small;
+    color:crimson;
+    padding: 0em 0.5em;
+}
+
+div.audio-player > div.info > :last-child > :first-child {
+    border-right: 1px solid rgba(220, 20, 60, 0.25);
+}

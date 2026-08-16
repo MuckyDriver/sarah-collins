@@ -1,0 +1,25 @@
+footer {
+    border-top: 1px #ddd solid;
+    padding: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    color: inherit;
+}
+
+footer > div.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+footer > div.socials > :is(a:hover, a:focus-visible) {
+    color: crimson;
+}
