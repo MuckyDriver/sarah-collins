@@ -23,7 +23,7 @@ export default function Navigation(props) {
             <li><A href="/pianist" activeClass="active" end={true}>Pianist</A></li>
             <li><A href="/composer" activeClass="active" end={true}>Composer</A></li>
             <li><A href="/educator" activeClass="active" end={true}>Educator</A></li>
-            <li><A href="/choir-leader" activeClass="active" end={true}>Choir Leader</A></li>
+            <li><A href="/choral-leader" activeClass="active" end={true}>Choral Leader</A></li>
             <li><A href="/dj-random" activeClass="active" end={true}>DJRandom</A></li>
         </ul>
     </nav>

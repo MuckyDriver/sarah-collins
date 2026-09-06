@@ -52,7 +52,7 @@ export default function AudioPlayer(props) {
         // Updating Duration Data
         function updateDurationData() {
             let dateData = new Date(Math.round(audioFileElement.duration * 1000));
-            duration.innerText = `${dateData.getMinutes()}:${dateData.getSeconds()}`;
+            duration.innerText = `${dateData.getMinutes()}:${(dateData.getSeconds() < 10 ? '0' : '') + dateData.getSeconds()}`;
         }
 
         audioFileElement.addEventListener("loadedmetadata", () => {updateDurationData()})

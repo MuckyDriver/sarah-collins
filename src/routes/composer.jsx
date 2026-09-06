@@ -14,7 +14,7 @@ export default function Composer() {
             <Header />
 
             <div class="content">
-                <section class="top">
+                <section class="top grid">
                     <div class="info">
                         <h1>Composer</h1>
                         <p>
@@ -29,6 +29,9 @@ export default function Composer() {
                             and more recently, the fabulous Salisbury based Hoodwink Theatre.
                         </p>
                     </div>
+                    <div class="image-container">
+                        <img src="/images/composer/composer2.jpg" class="bottom" alt="Composer"></img>
+                    </div>
                 </section>
 
                 <section class="grid equal">
@@ -37,7 +40,9 @@ export default function Composer() {
                             <img src="/icons/music_note.svg" alt="i" width="28"></img><span>Composed Music</span>
                         </h2>
 
-                        <AudioPlayer file="/audio/creativeminds.mp3" title="Creative Minds"/>
+                        <AudioPlayer file="/audio/AutumnHaze.mp3" title="Autumn Haze"/>
+                        <AudioPlayer file="/audio/CarillonPerfectDay.mp3" title="Carillon Perfect Day"/>
+                        <AudioPlayer file="/audio/CatAndMouse.mp3" title="Cat & Mouse"/>
 
                         <A class="button" href="https://soundcloud.com/sara-63" target="_blank">
                             <i class="fa fa-soundcloud" aria-hidden="true"></i><span>More on Soundcloud</span>

@@ -13,14 +13,14 @@ export default function Pianist() {
             <div class="content">
                 <section class="grid reverse top">
                     <div class="image-container">
-                        <img class="bottom" src="images/WinterWonderlandSalsCathedral.jpeg" alt="Winter Wonderland Sals Cathedral"></img>
+                        <img class="bottom" src="images/pianist/WinterWonderlandSalsCathedral.jpeg" alt="Winter Wonderland Sals Cathedral"></img>
                     </div>
                     <div class="info">
                         <img class="static" style="--x: calc(100% - 130px); --y: calc(100% - 130px);" src="icons/piano.svg" width={120} alt="static"></img>
                         <h1>Pianist</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non adipisci consequatur porro neque, sapiente officiis doloremque delectus, dolores ea possimus velit. 
-                            Blanditiis commodi cum a numquam dolorem repudiandae quia quam!
+                            She was a pianist (channeling the spirit of Mrs Mills) for Hoodwink Theatre's Winter's Trail immersive installation piece in December 2016
+                            at Salisbury Cathedral, as well as writing the now legendary Farewell To Brownsea for Hoodwink's installation piece on Brownsea Island.
                         </p>
                     </div>
                 </section>

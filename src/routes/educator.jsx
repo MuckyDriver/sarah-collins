@@ -15,10 +15,16 @@ export default function Educator() {
                     <div class="info">
                         <h1>Educator</h1>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, suscipit ut nam facilis velit possimus. 
-                            In magnam dolorum minus, dicta vel commodi, sint nulla hic ea soluta eius molestiae ex enim!
+                            Head of Music at The New Forest Small School, Lyndhurst. She has a small one to one practise at the school, teaching piano
+                            and Trinity Tock & Pop vocals. (Started 2011). She teaches there 2 days a week.
                         </p>
                     </div>
+                </section>
+
+                <section class="image-flex">
+                    <img src="/images/educator/educator.jpeg" alt="Educator" style="object-position: bottom"></img>
+                    <img src="/images/educator/educator2.jpeg" alt="Educator 2"></img>
+                    <img src="/images/educator/educator3.jpg" alt="Educator 3"></img>
                 </section>
             </div>
 
