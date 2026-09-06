@@ -8,7 +8,7 @@ export default function NotFound() {
             <Title>Page Not Found</Title>
             <HttpStatusCode code={404} />
 
-            No page found!
+            No such page found!
         </main>
     );
 }
